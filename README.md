@@ -1,4 +1,4 @@
-# Process-Particle-Counter
+# Fab-Process-Dark-Field-Particle-Counter
 This Python program is designed to automate the counting of particles in dark field microscope images.
 
 ### Overview
@@ -26,7 +26,24 @@ In dark field microscopy, identifying and quantifying particles that are not fea
 3. The python program will output a marked image and the generated summary statistics
 
 ## Example
+To run the program with a test image located in the /images folder, use the following command:
 
+```{python} 
+	python particle_counter.py --image /images/example.jpg
+```
+The program takes the input image:
+
+ <img src="images/example.jpg" alt="Alt text" width="400"/>
+
+And produces an output with particles of interest marked:
+
+ <img src="images/marked_example.jpg" alt="Alt text" width="400"/>
+
+The program will also output the following statistics:
+
+* Total number of particles: 41
+* Average particle size: 21.1 µm²
+* Sample standard deviation: 19.61 µm²
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
